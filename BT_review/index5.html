@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tong 20 so dau tien trong BifonaCi</title>
+</head>
+
+<body>
+    <script>
+        let a = 0,
+            b = 1,
+            quantity = 20,
+            sum1 = 0,
+            sum2 = 0;
+        for (let i = 1; i <= quantity; i++) {
+            if (a == 0) {
+                document.write(b, "<br/>");
+                sum1 += b;
+            }
+            else {
+                document.write(c, "<br/>");
+                sum2 += c;
+            }
+            c = b + a;
+            a = b;
+            b = c;
+        }
+        var sum = sum2 + sum1;
+        document.write("tong 20 so la: ", sum)
+    </script>
+</body>
+
+</html>

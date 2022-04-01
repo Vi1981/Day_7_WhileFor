@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tổng các số từ a tới b</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập số đầu :"));
+        let b = parseInt(prompt("Nhập số cuối :"));
+        let smallerNumber, biggerNumber;
+        if (a <= b) {
+            smallerNumber = a;
+            biggerNumber = b;
+        } else {
+            smallerNumber = b;
+            biggerNumber = a;
+        }
+        let sum = 0;
+        for (let i = smallerNumber; i <= biggerNumber; i++) {
+            sum += i;
+        }
+        document.write("Tổng từ " + a + " tới " + b + " là " + sum);
+    </script>
+</body>
+
+</html>

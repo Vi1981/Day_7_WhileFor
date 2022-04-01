@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số đảo ngược</title>
+</head>
+
+<body>
+    <script>
+        let numInput = parseInt(prompt("Nhập một dãy số:"));
+        let donVi = 0,
+            daoNguoc = 0;
+        while (numInput != 0) {
+            donVi = numInput % 10;
+            daoNguoc = daoNguoc * 10 + donVi;
+            numInput = (numInput - donVi) / 10;
+        }
+        alert(" số đảo ngược là " + daoNguoc);
+    </script>
+</body>
+
+</html>

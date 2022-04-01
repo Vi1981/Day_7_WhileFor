@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vừng ơi mở cửa ra</title>
+    <title>Nhiet do</title>
 </head>
 
 <body>
     <script>
-        const password = "Vung oi mo cua ra";
-        let input;
+        let temper;
         do {
-            input = prompt("Nhap cau than chu");
-        } while (input !== password);
-        alert("Mo cua thanh cong!");
+            temper = parseFloat(prompt("Nhap vao nhiet do "));
+        } while (temper < 20 || temper > 100);
+        document.write(temper);
     </script>
 </body>
 
